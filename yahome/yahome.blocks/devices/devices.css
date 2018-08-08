@@ -1,0 +1,43 @@
+.devices {
+  margin-top: 27px;
+  margin-right: -20px;
+  position: relative;
+}
+
+.devices__card {
+  margin-top: 14px;
+  margin-left: 14px;
+}
+
+.devices__favorites {
+  display: flex;
+  margin-left: -15px;
+  overflow-x: scroll;
+}
+
+@media only screen and (min-width: 1366px) {
+  .devices {
+    margin-top: 28px;
+    position: static;
+    overflow: visible;
+  }
+
+  .devices__favorites {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    overflow-x: visible;
+  }
+
+  .devices__favorites-menu {
+    margin-top: -1px;
+  }
+
+  .devices__favorites-nav {
+    margin-right: -17px;
+  }
+
+  .devices__card {
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+}

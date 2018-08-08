@@ -1,0 +1,40 @@
+.scripts {
+  margin-top: 26px;
+}
+
+.scripts__nav {
+  margin-top: 0;
+}
+
+.scripts__favorites {
+  display: flex;
+  margin-left: -15px;
+  overflow-x: scroll;
+}
+
+.scripts__card {
+  margin-top: 14px;
+  margin-left: 15px;
+}
+
+.scripts__card-name {
+  margin-top: 12px;
+}
+
+@media only screen and (min-width: 1100px) {
+ .scripts {
+   flex: 1 0 0;
+   margin-left: 36px;
+   margin-top: -4px;
+ }
+
+ .scripts__nav {
+   margin-top: 30px;
+ }
+
+ .scripts__favorites {
+   justify-content: flex-start;
+   flex-wrap: wrap;
+   overflow-x: visible;
+ }
+}

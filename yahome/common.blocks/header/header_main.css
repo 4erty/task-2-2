@@ -1,0 +1,14 @@
+.header-main {
+  position: -webkit-sticky;
+  position: sticky;
+  padding: 0 20px;
+  top: 0;
+  width: 100%;
+}
+
+@media only screen and (min-width: 660px) {
+  .header-main {
+    position: static;
+    top: unset;
+  }
+}

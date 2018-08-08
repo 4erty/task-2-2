@@ -1,0 +1,132 @@
+.screen {
+  max-width: 620px;
+  min-width: 335px;
+}
+
+.screen-main {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  background-image: url('./bg@1x.png');
+  height: 282px;
+  border-radius: 20px;
+}
+
+.screen__main-content {
+  padding-left: 20px;
+  padding-top: 21px;
+}
+
+.screen__header {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.screen__text {
+  color: #333333;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+.screen_widgets {
+  box-sizing: border-box;
+  margin-top: 15px;
+  display: flex;
+}
+
+.screen__widget {
+  margin-right: 19px;
+}
+
+.screen-cards {
+  display: flex;
+  overflow-x: scroll;
+  position: relative;
+}
+
+.screen__card {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.screen__arrow {
+  cursor: pointer;
+  display: none;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 110px;
+  bottom: 12px;
+  width: 16px;
+  height: 16px;
+}
+
+@media only screen and (min-width: 660px) {
+  .screen {
+    margin: auto;
+  }
+
+  .screen-main {
+    background-image: url('./bg@2x.png');
+    background-size: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-x: auto;
+    width: 630px;
+    height: 331px;
+  }
+
+  .screen__main-content {
+    padding-left: 25px;
+    padding-top: 25px; 
+  }
+
+  .screen__text-header {
+    font-size: 27px;
+    line-height: 31px;
+    margin-top: 25px;
+  }
+
+  .screen_widgets {
+    margin-top: 26px;
+  }
+  
+  .screen-cards {
+    margin-top: 4px;
+    padding-right: 20px;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    flex-direction: column;
+    overflow-x: auto;
+  }
+
+  .screen-cards::-webkit-scrollbar { 
+    display: none; 
+  }
+
+  .screen__card {
+    margin-top: 15px;
+  }
+
+  .screen__card:first-child:nth-last-child(n + 3) ~ .screen__arrow {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .screen {
+    flex: 2 0 0;
+  }
+
+  .screen__header {
+    margin-top: 29px;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .screen {
+    flex: 1 0 0;
+  }
+}

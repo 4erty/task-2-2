@@ -1,0 +1,39 @@
+.nav {
+  box-sizing: border-box;
+  display: flex;
+}
+
+.nav__item {
+  box-sizing: border-box;
+  color: rgba(133,133,133,1);
+  display: none;
+}
+
+.nav__button {
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 1px;
+  width: 16px;
+  height: 13.3px;
+}
+
+.nav__item-active {
+  color: rgba(51,51,51,1);
+}
+
+@media only screen and (min-width: 660px) {
+  .nav {
+    justify-content: space-between;
+    margin-top: 3px;
+    margin-left: 52px;
+    width: 280px;
+  }
+
+  .nav__item {
+    display: block;
+  }
+
+  .nav__button {
+    display: none;
+  }
+}

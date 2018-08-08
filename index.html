@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Яндекс Дом</title>
+  <meta name="description" content="Яндекс Дом">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="./yahome/script.js"></script>
+</head>
+<body>
+  <div class="main" id="main-window">
+
+    <!-- Main header block -->
+    <header class="header header-main">
+      <a class="logo link" href="#">
+        <img 
+          class="logo__image"
+          src="./yahome/assets/Яндекс Дом@1x.png" />
+      </a>
+      <nav class="nav">
+        <a class="text text_bold nav__item nav__item-active link" href="#">Сводка</a>
+        <a class="text text_bold nav__item link" href="#">Устройсва</a>
+        <a class="text text_bold nav__item link" href="#">Сценарии</a>
+        <div class="nav__button">
+          <img src="./yahome/assets/icon_list_m.png">
+        </div>
+      </nav>
+    </header>
+    <!-- Main header block -->
+
+    <!-- Content block with main and favorites scripts -->
+    <main class="content">
+      <!-- Main module -->
+      <div class="screen">
+        <!-- main header only for desktop -->
+        <div class="text text_bold text_bold_large screen__header">
+            <span>Главное</span>
+        </div>
+
+        <!-- Main content -->
+        <div class="screen-main">
+          <!-- Hello message and temperature widgets -->
+          <div class="screen__main-content">
+            <div class="text text_bold text_bold_extra">
+              <span>Привет, Геннадий!</span>
+            </div>
+            <div class="text screen__text">
+              <span>Двери и окна закрыты, сигнализация включена.</span>
+            </div>
+            <div class="screen_widgets">
+              <div class="widget screen__widget">
+                <div class="text widget__name">
+                  <span>Дома</span>
+                </div>
+                <div class="widget__content">
+                  <span class="text text_bold text_bold_big">+23</span>
+                  <i class="widget__icon">
+                    <img src="">
+                  </i>
+                </div>
+              </div>
+              <div class="widget screen__widget">
+                <div class="text widget__name">
+                  <span>За окном</span>
+                </div>
+                <div class="widget__content">
+                  <span class="text text_bold text_bold_big">+19</span>
+                  <span class="widget__icon">
+                    <img class="widget__image" src="./yahome/assets/cloud-drizzle.png" />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Hello end -->
+
+          <!-- screen cards -->
+          <div class="screen-cards">
+
+            <!-- card start -->
+            <div class="card screen__card temperature">
+              <div class="card__icon">
+                <img src="./yahome/assets/icon_temperature@1x.png">
+              </div>
+              <div class="text text_bold card__name">
+                <span>Philips Cooler</span>
+              </div>
+              <div class="text text_small card__text">
+                <span>Начнет охлаждать в 16:30</span>
+              </div>
+            </div>
+
+            <!-- card start -->
+            <div class="card screen__card light">
+              <div class="card__icon">
+                <img src="./yahome/assets/icon_sun@1x.png">
+              </div>
+              <div class="text text_bold card__name">
+                <span>Xiaomi Yeelight LED Smart Bulb</span>
+              </div>
+              <div class="text text_small card__text">
+                <span>Включится в 17:00</span>
+              </div>
+            </div>
+
+            <!-- card start -->
+            <div class="card screen__card floor">
+              <div class="card__icon">
+                <img src="./yahome/assets/icon_temperature_2@1x.png">
+              </div>
+              <div class="text text_bold card__name">
+                <span>Xiaomi Warm Floor</span>
+              </div>
+              <div class="text text_small card__text text text_small">
+                <span>Включено</span>
+              </div>
+            </div>
+
+            <div class="screen__arrow">
+              <img src="./yahome/assets/Icons_/Arrow Double_/M.png">
+            </div>
+          </div>
+          <!-- screen cards end -->
+        </div>
+        <!-- Main content end -->
+      </div>
+      <!-- Main end -->
+
+      <!-- favorites scripts -->
+      <div class="scripts favorites">
+        <!-- favorites scripts navigation -->
+        <div class="favorites__nav scripts__nav">
+            <div class="text text_bold text_bold_large favorites__header">
+                <span>Избранные сценарии</span>
+            </div>
+            <ul class="favorites__menu">
+            </ul>
+            <div class="favorites__arrows">
+              <span class="favorites__arrow favorites__arrow-left"></span>
+              <span class="favorites__arrow favorites__arrow-right"></span>
+            </div>
+        </div>
+        <!-- favorites scripts navigation end -->
+
+        <div class="favorites__content scripts__favorites">
+          
+          <!-- card start -->
+          <div class="card card_small scripts__card light">
+            <div class="card__icon">
+              <img src="./yahome/assets/icon_sun_2@1x.png">
+            </div>
+            <div class="text text_bold card__name scripts__card-name">
+              <span>Выключить весь свет в доме и во дворе</span>
+            </div>
+            <div class="text text_small card__text text text_small card__text_empty">
+              <span></span>
+            </div>
+          </div>
+
+          <!-- card start -->        
+          <div class="card card_small scripts__card scheduled">
+            <div class="card__icon">
+              <img src="./yahome/assets/icon_scheduled@1x.png">
+            </div>
+            <div class="text text_bold card__name scripts__card-name">
+              <span>Я ухожу</span>
+            </div>
+            <div class="text text_small card__text text text_small card__text_empty">
+              <span></span>
+            </div>
+          </div>
+
+          <!-- card start -->        
+          <div class="card card_small scripts__card light">
+            <div class="card__icon">
+              <img src="./yahome/assets/icon_sun_2@1x.png">
+            </div>
+            <div class="text text_bold card__name scripts__card-name">
+              <span>Включить свет в коридоре</span>
+            </div>
+            <div class="text text_small card__text text text_small card__text_empty">
+              <span></span>
+            </div>
+          </div>
+
+          <!-- card start -->
+          <div class="card card_small scripts__card temperature">
+            <div class="card__icon">
+              <img src="./yahome/assets/icon_temperature_2@1x.png">
+            </div>
+            <div class="text text_bold card__name scripts__card-name">
+              <span>Набрать горячую ванну</span>
+            </div>
+            <div class="text text_small card__text">
+              <span>Начнётся в 18:00</span>
+            </div>
+          </div>
+
+          <!-- card start -->
+          <div class="card card_small scripts__card floor">
+            <div class="card__icon">
+              <img src="./yahome/assets/icon_temperature_2@1x.png">
+            </div>
+            <div class="text text_bold card__name scripts__card-name">
+              <span>Сделать пол тёплым во всей квартире</span>
+            </div>
+            <div class="text text_small card__text text text_small card__text_empty">
+              <span></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- favorites scripts end -->
+      <!-- favorites devices -->
+      <div class="devices favorites">
+          <!-- favorite devices nav -->
+          <div class="favorites__nav devices__favorites-nav">
+            <div class="text text_bold text_bold_large favorites__header">
+                <span>Избранные устройства</span>
+            </div>
+            <ul class="favorites__menu devices__favorites-menu">
+              <li class="text text_bold text_bold_small favorites__menu-item favorites__menu-item_active">Все</li>
+              <li class="text text_bold text_bold_small favorites__menu-item">Кухня</li>
+              <li class="text text_bold text_bold_small favorites__menu-item">Зал</li>
+              <li class="text text_bold text_bold_small favorites__menu-item">Лампочки</li>
+              <li class="text text_bold text_bold_small favorites__menu-item">Камеры</li>
+            </ul>
+            <div class="favorites__arrows">
+              <span class="favorites__arrow favorites__arrow-left"></span>
+              <span class="favorites__arrow favorites__arrow-right"></span>
+            </div>
+          </div>
+          <div class="favorites__content devices__favorites">
+            
+            <!-- card start -->
+            <div class="card devices__card light">
+              <div class="card__icon">
+                <img src="./yahome/assets/icon_sun_2@1x.png">
+              </div>
+              <div class="text text_bold card__name">
+                <span>Xiaomi Yeelight LED Smart Bulb</span>
+              </div>
+              <div class="text text_small card__text">
+                <span>Включено</span>
+              </div>
+            </div>
+  
+            <!-- card start -->
+            <div class="card devices__card light">
+              <div class="card__icon">
+                <img src="./yahome/assets/icon_sun@1x.png">
+              </div>
+              <div class="text text_bold card__name">
+                <span>D-Link Omna 180 Cam</span>
+              </div>
+              <div class="text text_small card__text">
+                <span>Включится в 17:00</span>
+              </div>
+            </div>
+  
+            <!-- card start -->
+            <div class="card devices__card temperature">
+              <div class="card__icon">
+                <img src="./yahome/assets/icon_temperature@1x.png">
+              </div>
+              <div class="text text_bold card__name">
+                <span>Elgato Eve Degree Connected</span>
+              </div>
+              <div class="text text_small card__text">
+                <span>Выключено до 17:00</span>
+              </div>
+            </div>
+  
+            <!-- card start -->
+            <div class="card devices__card light">
+              <div class="card__icon">
+                <img src="./yahome/assets/icon_sun@1x.png">
+              </div>
+              <div class="text text_bold card__name">
+                <span>LIFX Mini Day & Dusk A60 E27</span>
+              </div>
+              <div class="text text_small card__text">
+                <span>Включится в 17:00</span>
+              </div>
+            </div>
+  
+            <!-- card start -->
+            <div class="card devices__card light">
+              <div class="card__icon">
+                <img src="./yahome/assets/icon_sun_2@1x.png">
+              </div>
+              <div class="text text_bold card__name">
+                <span>Xiaomi Mi Air Purifier 2S</span>
+              </div>
+              <div class="text text_small card__text">
+                <span>Включено</span>
+              </div>
+            </div>
+  
+            <!-- card start -->
+            <div class="card devices__card light">
+              <div class="card__icon">
+                <img src="./yahome/assets/icon_sun@1x.png">
+              </div>
+              <div class="text text_bold card__name">
+                <span>Philips Zhirui</span>
+              </div>
+              <div class="text text_small card__text">
+                <span>Включено</span>
+              </div>
+            </div>
+  
+          </div>
+      </div>
+    </main>
+    <!-- content end -->
+
+    <!-- Footer block with favorite devices -->
+    <footer class="footer">
+      <ul class="footer__nav footer__text">         
+        <li class="text text_small footer__nav-item">Помощь</li>
+        <li class="text text_small footer__nav-item">Обратная связь</li>
+        <li class="text text_small footer__nav-item">Разработчикам</li>
+        <li class="text text_small footer__nav-item">Условия использования</li>
+      </ul>
+      <div class="text footer__label footer__text">
+        <span>© 2001–2017  ООО «Яндекс»</span>
+      </div>
+    </footer>
+    <!-- Footer end -->
+  </div>
+  <!-- main end -->
+  <!-- Modal popup start -->
+  <div class="modal" id="modal-window">
+    <div class="modal__content">
+      <div class="modal__name">
+        <span class="text text_bold text_bold_extra">Xiaomi Yeelight LED Smart Bulb</span>
+      </div>
+      <div class="modal__message">
+        <span class="text">Включится в 17:00</span>
+      </div>
+      <ul class="modal__modes">
+        <li class="text text_bold text_bold_small modal__mode modal__mode-active">Вручную</li>
+        <li class="text text_bold text_bold_small modal__mode">Дневной свет</li>
+        <li class="text text_bold text_bold_small modal__mode">Вечерний свет</li>
+      </ul>
+      <div class="modal__control">
+        <div class="modal__control-back">
+          <div class="text text_bold text_bold_large modal__control-data">+23</div>
+          <input class="modal__control-nav" type="range" min="-10" max="30" value="10">
+        </div>
+      </div>
+      <div class="widget modal__widget">
+        <div class="widget__content">
+          <span class="text text_bold text_bold_big widget__text">+23</span>
+          <i class="widget__icon">
+            <img class="widget__image modal__image" src="./yahome/assets/icon_sun@2x.png">
+          </i>
+        </div>
+      </div>
+    </div>
+    <div class="modal__button modal__button-done">
+      <span class="text text_bold text_bold_large">Применить</span>
+    </div>
+    <div class="modal__button modal__button-cancel">
+      <span class="text text_bold text_bold_large">Закрыть</span>
+    </div>
+  </div>
+  <!-- Modal popup end -->
+</body>
+</html>

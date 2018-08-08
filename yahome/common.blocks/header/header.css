@@ -1,0 +1,19 @@
+.header {
+  box-sizing: border-box;
+  background: #FFFFFF;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+@media only screen and (min-width: 660px) {
+  .header {
+    height: 94px;
+    border-bottom: 1px solid rgba(240,240,240,1);
+    justify-content: flex-start;
+    align-content: center;
+  }
+}

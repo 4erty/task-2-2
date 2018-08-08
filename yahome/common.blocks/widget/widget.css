@@ -1,0 +1,32 @@
+.widget {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.widget__content {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.widget__icon {
+  display: block;
+  box-sizing: border-box;
+}
+
+.widget__image {
+  box-sizing: border-box;
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-left: 3px;
+}
+
+@media only screen and (min-width: 1366px) {
+  .widget__image {
+    width: 26px;
+    height: 26px;
+  }
+}
